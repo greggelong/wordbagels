@@ -12,7 +12,7 @@ let win = false;
 
 let wordlist = ["cat", "dog", "hat", "bat", "sat", "house"]
 let wordlist2 = ["ass","ours", "tie", "row", "pool", "bell", "absent", "secondary"]
-
+let lettout = [];
 function setup(){
   noCanvas();
   input = select('#input');
@@ -96,11 +96,14 @@ function getClues(guess,secret){
       clue += "*"
     } else{
       clue+="-"
+      if (!lettout.includes(ga[i])){
+      lettout.push(ga[i])
+      }
     }
     //clue+="_"
   }
   console.log(clue)
-  createP(clue)
+  createP(clue+" : no :"+lettout)
   if(reply.length == 0){
     return "bagels"
   } else{
