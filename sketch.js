@@ -43,7 +43,7 @@ function goguess(){
 
   input.value(' ')
     } else if (guessNum >= 11 && !win){
-      output.html("Too many guesses!!!, my number was "+computerSecret +" Refresh to play again!")
+      output.html("Too many guesses!!!, my word was "+computerSecret +" Refresh to play again!")
 
     }else{
 
@@ -100,6 +100,7 @@ function getClues(guess,secret){
     //clue+="_"
   }
   console.log(clue)
+  createP(clue)
   if(reply.length == 0){
     return "bagels"
   } else{
