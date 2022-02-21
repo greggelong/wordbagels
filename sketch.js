@@ -112,3 +112,32 @@ function getClues(guess,secret){
   }
 
 }
+
+
+
+/*
+need to fix the logic for double letters
+clues
+
+
+You got it!!! *Refresh the page to play again*
+
+---- : no :c,a,r,s
+
+Guess 1 cars bagels
+
+---- : no :c,a,r,s,p,o,n,t
+
+Guess 2 pont bagels
+
+---- : no :c,a,r,s,p,o,n,t,m,i,h,u
+
+Guess 3 mihu bagels
+
+be*- : no :c,a,r,s,p,o,n,t,m,i,h,u,f
+
+Guess 4 beef fermi, fermi, pico
+
+Guess 5 bell You got it!!! *Refresh the page to play again*
+
+*/
