@@ -82,19 +82,29 @@ function getClues(guess,secret){
   let ga = guess.split('');
   let sa = secret.split('');
   //print(ga,sa)
-  // this logic has a problem with double letters at end of word see example bell amd ass
+  // fixed :this logic has a problem with double letters at end of word see example bell amd ass
+  // fixed the logic by comparing the secret to the gess at each index
   let reply = [];
+  let clue ="";
   for(let i=0;i<guess.length;i++){
-    if(sa.indexOf(ga[i]) === i){
+    //if(sa.indexOf(ga[i]) === i){
+    if(sa[i]=== ga[i]){
       reply.push("fermi");
+      clue += sa[i];
     } else if(sa.includes(ga[i])){
       reply.push("pico");
+      clue += "*"
+    } else{
+      clue+="-"
     }
+    //clue+="_"
   }
+  console.log(clue)
   if(reply.length == 0){
     return "bagels"
   } else{
       //reply.sort(()=> Math.random() - 0.5)
       return reply.join(', ')
   }
+
 }
