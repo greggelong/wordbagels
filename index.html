@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>bagels</title>
+	<style>
+    body{
+      padding: 0%;
+      margin: 0;
+      color: #66FF00;
+      background-color: black;
+      font-size: 110%;
+      text-align: center;
+      font-family: monospace; 
+    }
+
+    pre{
+      font-family: monospace; 
+    }
+  </style>
+  <script src="p5.min.js"></script>
+  <script src="sketch.js"></script>
+</head>
+<body>
+  <pre>
+    READY.                                                             
+    RUN WORD BAGELS                                                         
+    *******************************************************************  
+    |I am thinking of a 3-letter word ,                                \ 
+    |                                                                 |**
+    |For example:  'cat', 'dog', or even with a leading zero '089'    |**
+    |                                                                 |**
+    |Can you guess the word?                                          |**
+    |                                                                 |**
+    |I will give you some clues:                                      |**
+    |                                                                 |**
+    |                                                                 |**
+    |                                                                 |**
+    |  *Pico*    ==> One digit is correct but in the wrong position.  |**
+    |                                                                 |**
+    |  *Fermi*   ==> One digit is correct and in the right position.  |**
+    |                                                                 |**
+    |  *Bagels*  ==> No digit is correct.                             |**
+    |                                                                 |**
+    |  You have 10 guesses to get it.                                 |**
+    |  Type your guess and Click RETURN                               |**
+    *******************************************************************\*
+    ******************************************************************** 
+  </pre>
+	<input id="input" value="type your guess here" />
+	<button id="btn">RETURN</button>
+	<p id="output">output</p>
+  
+
+</body>
+</html>
