@@ -1,5 +1,5 @@
-# bagels
-## a JavaScript version of bagels logic guessing game
+# word bagels
+## a JavaScript version of word bagels logic guessing game
 
 Using p5js DOM library to select and handle elements. 
 
